@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 430" width="900" height="430" font-family="Helvetica, Arial, sans-serif" font-size="14">
+  <title>Vault-based guest messaging: pilot architecture</title>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2f3b52"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="900" height="430" fill="#ffffff"/>
+
+  <g fill="#f3f5f9" stroke="#2f3b52" stroke-width="1.5">
+    <rect x="30" y="30" width="150" height="60" rx="8"/>
+    <rect x="260" y="30" width="180" height="60" rx="8"/>
+    <rect x="520" y="30" width="220" height="60" rx="8"/>
+    <rect x="330" y="170" width="240" height="80" rx="8"/>
+    <rect x="640" y="170" width="220" height="80" rx="8"/>
+    <rect x="250" y="320" width="170" height="60" rx="8"/>
+    <rect x="440" y="320" width="170" height="60" rx="8"/>
+    <rect x="660" y="320" width="200" height="60" rx="8"/>
+  </g>
+  <rect x="30" y="160" width="230" height="100" rx="8" fill="#e7f2ec" stroke="#2e6b4f" stroke-width="2"/>
+
+  <g fill="#1d2433" text-anchor="middle">
+    <text x="105" y="65" font-weight="bold">Guest</text>
+    <text x="350" y="65" font-weight="bold">Booking platform</text>
+    <text x="630" y="56" font-weight="bold">Channel manager</text>
+    <text x="630" y="76" font-size="12">Host Tools API</text>
+    <text x="450" y="203" font-weight="bold">Agent service</text>
+    <text x="450" y="225" font-size="12">Python · Claude Agent SDK · systemd</text>
+    <text x="750" y="203" font-weight="bold">Anthropic API</text>
+    <text x="750" y="225" font-size="12">selectable model · usage limits</text>
+    <text x="335" y="355" font-weight="bold">Draft reply</text>
+    <text x="525" y="355" font-weight="bold">Escalation</text>
+    <text x="760" y="346" font-weight="bold">Operator team</text>
+    <text x="760" y="366" font-size="12">Telegram</text>
+    <text x="145" y="188" font-weight="bold" fill="#2e6b4f">Vault (Markdown)</text>
+    <text x="145" y="210" font-size="12">property knowledge</text>
+    <text x="145" y="228" font-size="12">response instructions</text>
+    <text x="145" y="246" font-size="12">edited by the operator</text>
+  </g>
+
+  <g stroke="#2f3b52" stroke-width="1.5" fill="none">
+    <line x1="180" y1="60" x2="258" y2="60" marker-end="url(#arrow)"/>
+    <line x1="440" y1="60" x2="518" y2="60" marker-end="url(#arrow)"/>
+    <polyline points="630,90 630,130 450,130 450,168" marker-end="url(#arrow)"/>
+    <line x1="260" y1="210" x2="328" y2="210" marker-end="url(#arrow)"/>
+    <line x1="572" y1="210" x2="638" y2="210" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <line x1="420" y1="250" x2="345" y2="318" marker-end="url(#arrow)"/>
+    <line x1="480" y1="250" x2="520" y2="318" marker-end="url(#arrow)"/>
+    <line x1="610" y1="350" x2="658" y2="350" marker-end="url(#arrow)"/>
+    <polyline points="335,380 335,405 760,405 760,382" marker-end="url(#arrow)"/>
+    <polyline points="860,350 885,350 885,60 742,60" stroke-dasharray="6 5" marker-end="url(#arrow)"/>
+  </g>
+
+  <g fill="#4a5568" font-size="12">
+    <text x="540" y="124">new guest message</text>
+    <text x="268" y="202">reads</text>
+    <text x="870" y="215" transform="rotate(-90 870 215)" text-anchor="middle">send: not exercised in the pilot</text>
+  </g>
+</svg>
